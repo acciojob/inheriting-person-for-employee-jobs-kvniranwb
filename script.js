@@ -1,4 +1,4 @@
-// 1. Define the Person base class
+// 1. Define the Person base class (Matches Cypress: no comma after name)
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -6,14 +6,14 @@ class Person {
   }
 
   greet() {
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   }
 }
 
-// 2. Define the Employee class that inherits from Person
+// 2. Define the Employee class (Matches Cypress: has commas)
 class Employee extends Person {
   constructor(name, age, jobTitle) {
-    super(name, age); // Pass name and age to the Person constructor
+    super(name, age);
     this.jobTitle = jobTitle;
   }
 
